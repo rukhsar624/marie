@@ -10,11 +10,20 @@
     <!-- font cdn -->
     <link href="https://db.onlinewebfonts.com/c/4d4f45d65a23eec6fb297a1bcf0c046f?family=SchnyderXLLight"
         rel="stylesheet">
+        <!-- wow css -->
+        <link rel="stylesheet" href="../css/wow.css">
     <!-- custom css -->
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 
 <body style="background-color: #000;">
+    <!-- loader  open -->
+    <div id="loader" class="loader">
+        <div class="image-div-main">
+        <img src="../images/loader.gif" alt="Loading..." class="loader-image">
+        </div>
+      </div>
+    <!-- loader closed -->
     <!--Header open--->
     <header class="header" id="navbar-fixed-top">
         <div class="container">
@@ -73,15 +82,15 @@
                             <h1>12, rue du Colonel Driant</h1>
                         </div>
                         <div>
-                            <h1>10000 Troyes, France</h1>
+                            <h1 class="wow animated slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">10000 Troyes, France</h1>
                         </div>
-                        <div class="mail">
+                        <div class="mail wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                             <a href="">contact@marieweber.fr</a>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-contact">
-                    <form action="">
+                <div class="contact-form-contact" >
+                    <form action="" class="mail wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <div class="column-8 input col-lg-12 mx-auto">
@@ -123,7 +132,7 @@
                             </div>
                         </div>
                     </form>
-                    <div class="row credits text-light">
+                    <div class="row credits text-light wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="column-12" data-scroll="" data-scroll-type="up" data-scroll-hook="1"
                             style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);text-decoration: none;">Crafted by <a
                                 href="http://www.monsieurcaillou.com" target="_blank" style="text-decoration: none;">Pierre Nguyen</a> &amp; <a
@@ -152,6 +161,8 @@
     <script src="../js/jquery.min.js"></script>
     <!-- bootstrap -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- wow js  -->
+    <script src="../js/wow.js"></script>
     <!-- custom js -->
     <script src="../js/custom.js"></script>
 </body>
