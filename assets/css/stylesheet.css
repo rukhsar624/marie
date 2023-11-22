@@ -908,7 +908,7 @@
 .gender {
     pointer-events: none;
     position: absolute;
-    right: 650px;
+    right: 720px;
     top: 15px;
     transform: translateY(20px) scale(.5);
     opacity: 0;
