@@ -15,13 +15,235 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
+<style>
+    /** fadeInLeft **/
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+.in-left {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-duration:2s;
+    animation-delay: 2s;
+}
+/*  */
+/* in-up */
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.in-up {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+/* in-down */
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.in-down {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+/* bounce in */
+@-webkit-keyframes fadeInBounce {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeInBounce {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBounce {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.in-bounce {
+    -webkit-animation-name: fadeInBounce;
+    animation-name: fadeInBounce;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+</style>
 <body>
     <!-- loader  open -->
     <div id="loader" class="loader">
         <div class="image-div-main">
-        <img src="../images/loader.gif" alt="Loading..." class="loader-image">
+            <img src="../images/loader.gif" alt="Loading..." class="loader-image">
         </div>
-      </div>
+    </div>
     <!-- loader closed -->
     <!--Header open--->
     <header class="header" id="navbar-fixed-top header">
@@ -59,31 +281,99 @@
     </header>
     <!--Header Closed  -->
     <!-- main section open -->
-    <section class="main">
+    <section class="main position-relative">
         <div class="rose">
             <div class="color-list">
                 <!-- <div class="row">
-                    <div class="column-12 abs name-color" style="color: rgb(242, 196, 208); visibility: hidden; opacity: 0;"><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter42">R</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter43">o</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter44">s</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter45">e</div></div>
-                    <div class="column-12 abs name-color" style="color: rgb(107, 38, 72); visibility: inherit; opacity: 1;"><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter34">B</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter35">o</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter36">r</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter37">d</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter38">e</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter39">a</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter40">u</div><div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" class="letter letter41">x</div></div>
-                    <div class="column-12 abs name-color" style="color: #335e47"><div style="position:relative;display:inline-block;" class="letter letter30">V</div><div style="position:relative;display:inline-block;" class="letter letter31">e</div><div style="position:relative;display:inline-block;" class="letter letter32">r</div><div style="position:relative;display:inline-block;" class="letter letter33">t</div></div>
-                    <div class="column-12 abs name-color" style="color: #c8713c"><div style="position:relative;display:inline-block;" class="letter letter24">O</div><div style="position:relative;display:inline-block;" class="letter letter25">r</div><div style="position:relative;display:inline-block;" class="letter letter26">a</div><div style="position:relative;display:inline-block;" class="letter letter27">n</div><div style="position:relative;display:inline-block;" class="letter letter28">g</div><div style="position:relative;display:inline-block;" class="letter letter29">e</div></div>
-                    <div class="column-12 abs name-color" style="color: #3a2d25"><div style="position:relative;display:inline-block;" class="letter letter18">M</div><div style="position:relative;display:inline-block;" class="letter letter19">a</div><div style="position:relative;display:inline-block;" class="letter letter20">r</div><div style="position:relative;display:inline-block;" class="letter letter21">r</div><div style="position:relative;display:inline-block;" class="letter letter22">o</div><div style="position:relative;display:inline-block;" class="letter letter23">n</div></div>
-                    <div class="column-12 abs name-color" style="color: #b3936d"><div style="position:relative;display:inline-block;" class="letter letter10">P</div><div style="position:relative;display:inline-block;" class="letter letter11">a</div><div style="position:relative;display:inline-block;" class="letter letter12">n</div><div style="position:relative;display:inline-block;" class="letter letter13">t</div><div style="position:relative;display:inline-block;" class="letter letter14">h</div><div style="position:relative;display:inline-block;" class="letter letter15">è</div><div style="position:relative;display:inline-block;" class="letter letter16">r</div><div style="position:relative;display:inline-block;" class="letter letter17">e</div></div>
-                    <div class="column-12 abs name-color" style="color: #f4f4f4"><div style="position:relative;display:inline-block;" class="letter letter5">B</div><div style="position:relative;display:inline-block;" class="letter letter6">l</div><div style="position:relative;display:inline-block;" class="letter letter7">a</div><div style="position:relative;display:inline-block;" class="letter letter8">n</div><div style="position:relative;display:inline-block;" class="letter letter9">c</div></div>
-                    <div class="column-12 abs name-color" style="color: #000000"><div style="position:relative;display:inline-block;" class="letter letter1">N</div><div style="position:relative;display:inline-block;" class="letter letter2">o</div><div style="position:relative;display:inline-block;" class="letter letter3">i</div><div style="position:relative;display:inline-block;" class="letter letter4">r</div></div>
-            </div> -->
+                    <div class="column-12 abs name-color"
+                        style="color: rgb(242, 196, 208); visibility: hidden; opacity: 0;">
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter42">R</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter43">o</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter44">s</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter45">e</div>
+                    </div>
+                    <div class="column-12 abs name-color"
+                        style="color: rgb(107, 38, 72); visibility: inherit; opacity: 1;">
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter34">B</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter35">o</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter36">r</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter37">d</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter38">e</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter39">a</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter40">u</div>
+                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
+                            class="letter letter41">x</div>
+                    </div>
+                    <div class="column-12 abs name-color" style="color: #335e47">
+                        <div style="position:relative;display:inline-block;" class="letter letter30">V</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter31">e</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter32">r</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter33">t</div>
+                    </div>
+                    <div class="column-12 abs name-color" style="color: #c8713c">
+                        <div style="position:relative;display:inline-block;" class="letter letter24">O</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter25">r</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter26">a</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter27">n</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter28">g</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter29">e</div>
+                    </div>
+                    <div class="column-12 abs name-color" style="color: #3a2d25">
+                        <div style="position:relative;display:inline-block;" class="letter letter18">M</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter19">a</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter20">r</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter21">r</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter22">o</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter23">n</div>
+                    </div>
+                    <div class="column-12 abs name-color" style="color: #b3936d">
+                        <div style="position:relative;display:inline-block;" class="letter letter10">P</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter11">a</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter12">n</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter13">t</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter14">h</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter15">è</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter16">r</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter17">e</div>
+                    </div>
+                    <div class="column-12 abs name-color" style="color: #f4f4f4">
+                        <div style="position:relative;display:inline-block;" class="letter letter5">B</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter6">l</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter7">a</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter8">n</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter9">c</div>
+                    </div>
+                    <div class="column-12 abs name-color" style="color: #000000">
+                        <div style="position:relative;display:inline-block;" class="letter letter1">N</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter2">o</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter3">i</div>
+                        <div style="position:relative;display:inline-block;" class="letter letter4">r</div>
+                    </div>
+                </div> -->
             </div>
             <div class="row text-title">
-               <div class="row">
-                <div class="col-lg-6 mx-auto">
-                    <p>"La couleur représente pour moi l'expression non
-                        retenue, l'audace et la liberté. Mon instinct
-                        m'amène à créer certaines associations inattendues
-                        sur des matières nobles qui rapidement
-                        deviennent une évidence. Alors, l'expression haut
-                        en couleur, prend naturellement tout son sens."</p>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <p class="in-down">"La couleur
+                            représente pour moi l'expression non
+                            retenue, l'audace et la liberté. Mon instinct
+                            m'amène à créer certaines associations inattendues
+                            sur des matières nobles qui rapidement
+                            deviennent une évidence. Alors, l'expression haut
+                            en couleur, prend naturellement tout son sens."</p>
+                    </div>
                 </div>
-               </div> 
             </div>
         </div>
     </section>
@@ -91,15 +381,40 @@
     <!-- first section -->
     <section class="charlotte">
         <div class="container">
-            <h1 class="block_anim">Charlotte</h1>
+            <div class="row position-relative">
+                <div class="text-rose">
+                    <!-- <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Rose</h1> -->
+                    <div class="d-flex">
+                        <div>
+                            <h1 class="in-left">
+                                R</h1>
+                        </div>
+                        <div>
+                            <h1 class="in-left">
+                                O</h1>
+                        </div>
+                        <div>
+                            <h1 class="in-left">
+                                S</h1>
+                        </div>
+                        <div>
+                            <h1 class="in-left">
+                                E</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Charlotte</h1>
             <div class="row pictures">
-                <div class="first-image-couleurs">
+                <div class="first-image-couleurs in-bounce">
                     <img src="../images/charlotte_rose1.jpg" alt="">
                 </div>
-                <div class="second-image-couleures">
+                <div class="second-image-couleures in-bounce">
                     <img src="../images/charlotte_rose2.jpg" alt="">
                 </div>
-                <div class="third-image-couleures">
+                <div class="third-image-couleures in-bounce">
                     <img src="../images/charlotte_rose3.jpg" alt="">
                 </div>
             </div>
@@ -109,15 +424,22 @@
     <!-- second section -->
     <section class="Raphaëles">
         <div class="container">
-            <h1>Raphaële</h1>
+            <div class="row position-relative">
+                <div class="text-Bordeaux">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Bordeaux</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Raphaële</h1>
             <div class="row pictures-2">
-                <div class="first-img-raps">
+                <div class="first-img-raps in-bounce">
                     <img src="../images/raphaelebordeaux2.jpg" alt="">
                 </div>
-                <div class="second-img-raps">
+                <div class="second-img-raps in-bounce">
                     <img src="../images/raphaelebordeaux3.jpg" alt="">
                 </div>
-                <div class="third-img-raps">
+                <div class="third-img-raps in-bounce">
                     <img src="../images/raphaelebordeaux1.jpg" alt="">
                 </div>
             </div>
@@ -127,12 +449,19 @@
     <!-- third section -->
     <section class="Amélie">
         <div class="container">
-            <h1>Amélie</h1>
+            <div class="row position-relative">
+                <div class="text-Bordeaux">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Bordeaux</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Amélie</h1>
             <div class="row pictures-3">
-                <div class="first-img-ame">
+                <div class="first-img-ame in-bounce">
                     <img src="../images/amelie_bordeaux1.jpg" alt="">
                 </div>
-                <div class="second-img-ame">
+                <div class="second-img-ame in-bounce">
                     <img src="../images/amelie_bordeaux2.jpg" alt="">
                 </div>
             </div>
@@ -142,12 +471,19 @@
     <!-- four section -->
     <section class="Raphaële">
         <div class="container">
-            <h1>Raphaële</h1>
+            <div class="row position-relative">
+                <div class="text-Vert">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Vert</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Raphaële</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap">
+                <div class="first-img-rap in-bounce">
                     <img src="../images/weber_raphaecc88levert2.jpg" alt="">
                 </div>
-                <div class="second-img-rap">
+                <div class="second-img-rap in-bounce">
                     <img src="../images/weber_raphaecc88levert3.jpg" alt="">
                 </div>
             </div>
@@ -157,12 +493,19 @@
     <!-- five section -->
     <section class="Raphaële">
         <div class="container">
-            <h1>Hannah</h1>
+            <div class="row position-relative">
+                <div class="text-Vert">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Vert</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Hannah</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap">
+                <div class="first-img-rap in-bounce">
                     <img src="../images/minibertrand_vert1.jpg" alt="">
                 </div>
-                <div class="second-img-rap">
+                <div class="second-img-rap in-bounce">
                     <img src="../images/minibertrand_vert2.jpg" alt="">
                 </div>
             </div>
@@ -172,15 +515,22 @@
     <!-- six section -->
     <section class="charlotte mt">
         <div class="container">
-            <h1>Charlotte</h1>
+            <div class="row position-relative">
+                <div class="text-Vert">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Vert</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Charlotte</h1>
             <div class="row pictures">
-                <div class="first-image-couleurs">
+                <div class="first-image-couleurs in-bounce">
                     <img src="../images/charlotte_vert1.jpg" alt="">
                 </div>
-                <div class="second-image-couleures">
+                <div class="second-image-couleures in-bounce">
                     <img src="../images/charlotte_vert2.jpg" alt="">
                 </div>
-                <div class="third-image-couleures">
+                <div class="third-image-couleures in-bounce">
                     <img src="../images/charlotte_vert3.jpg" alt="">
                 </div>
             </div>
@@ -190,12 +540,19 @@
     <!-- seven section -->
     <section class="Raphaële">
         <div class="container">
-            <h1>Hannah</h1>
+            <div class="row position-relative">
+                <div class="text-Orange">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Orange</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Hannah</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap">
+                <div class="first-img-rap in-bounce">
                     <img src="../images/minibertrand_orange2.jpg" alt="">
                 </div>
-                <div class="second-img-rap">
+                <div class="second-img-rap in-bounce">
                     <img src="../images/minibertrand_orange3.jpg" alt="">
                 </div>
             </div>
@@ -205,12 +562,19 @@
     <!-- eight section -->
     <section class="Raphaële">
         <div class="container">
-            <h1>Hannah</h1>
+            <div class="row position-relative">
+                <div class="text-Marron">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Marron</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Hannah</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap">
+                <div class="first-img-rap in-bounce">
                     <img src="../images/bertrand_orange2.jpg" alt="">
                 </div>
-                <div class="second-img-rap">
+                <div class="second-img-rap in-bounce">
                     <img src="../images/minibertrand_marron2.jpg" alt="">
                 </div>
             </div>
@@ -220,7 +584,14 @@
     <!-- nine section -->
     <section class="charlotte">
         <div class="container">
-            <h1>Bertrand</h1>
+            <div class="row position-relative">
+                <div class="text-Marron">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Marron</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Bertrand</h1>
             <div class="row pictures">
                 <div class="first-image-couleurs">
                     <img src="../images/bertrand_orange.jpg" alt="">
@@ -238,7 +609,14 @@
     <!-- ten section -->
     <section class="charlotte">
         <div class="container">
-            <h1>Amélie</h1>
+            <div class="row position-relative">
+                <div class="text-Panthere">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Panthere</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Amélie</h1>
             <div class="row pictures">
                 <div class="first-image-couleurs">
                     <img src="../images/amelie_leopard1.jpg" alt="">
@@ -256,7 +634,14 @@
     <!-- eleven section -->
     <section class="Raphaële">
         <div class="container">
-            <h1>Amélie</h1>
+            <div class="row position-relative">
+                <div class="text-Panthere">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Panthere</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Amélie</h1>
             <div class="row pictures-4">
                 <div class="first-img-rap">
                     <img src="../images/amelie_blanc1.jpg" alt="">
@@ -271,7 +656,14 @@
     <!-- twelve section -->
     <section class="Raphaële">
         <div class="container">
-            <h1>Raphaële</h1>
+            <div class="row position-relative">
+                <div class="text-Noir">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Panthere</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Raphaële</h1>
             <div class="row pictures-4">
                 <div class="first-img-rap">
                     <img src="../images/weber_raphaecc88lenoir2.jpg" alt="">
@@ -286,7 +678,14 @@
     <!-- thirteen section -->
     <section class="Raphaële">
         <div class="container">
-            <h1>Hannah</h1>
+            <div class="row position-relative">
+                <div class="text-Noir">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Panthere</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Hannah</h1>
             <div class="row pictures-4">
                 <div class="first-img-rap">
                     <img src="../images/minibertrand_bleu2.jpg" alt="">
@@ -301,7 +700,14 @@
     <!-- fourteen section  -->
     <section class="charlotte">
         <div class="container">
-            <h1>Charlotte</h1>
+            <div class="row position-relative">
+                <div class="text-Noir">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Panthere</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Charlotte</h1>
             <div class="row pictures">
                 <div class="first-image-couleurs">
                     <img src="../images/charlotte_noir1.jpg" alt="">
@@ -319,7 +725,14 @@
     <!-- fifteen section -->
     <section class="Raphaële">
         <div class="container">
-            <h1>Amélie</h1>
+            <div class="row position-relative">
+                <div class="text-Noir">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Panthere</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Amélie</h1>
             <div class="row pictures-4">
                 <div class="first-img-rap">
                     <img src="../images/amelie_noir1.jpg" alt="">
@@ -334,7 +747,14 @@
     <!-- sixteen section -->
     <section class="Pascal">
         <div class="container">
-            <h1>Pascal</h1>
+            <div class="row position-relative">
+                <div class="text-Noir">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Panthere</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Pascal</h1>
             <div class="row pictures-un">
                 <div class="first-img-pas">
                     <img src="../images/marieweber__pascal_noir3.jpg" alt="">
@@ -352,7 +772,14 @@
     <!-- eighteen section -->
     <section class="Raphaële">
         <div class="container">
-            <h1>Bertrand</h1>
+            <div class="row position-relative">
+                <div class="text-Noir">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Panthere</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Bertrand</h1>
             <div class="row pictures-4">
                 <div class="first-img-rap">
                     <img src="../images/marieweber__bertrand_noir1.jpg" alt="">
@@ -365,9 +792,16 @@
     </section>
     <!--  -->
     <!-- nineteen section  -->
-    <section class="charlotte">
+    <section class="charlotte mb-5 mpb-5">
         <div class="container">
-            <h1>Charlotte</h1>
+            <div class="row position-relative">
+                <div class="text-Noir">
+                    <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
+                        style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                        Panthere</h1>
+                </div>
+            </div>
+            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Charlotte</h1>
             <div class="row pictures">
                 <div class="first-image-couleurs">
                     <img src="../images/bertrand_noir1.jpg" alt="">
@@ -386,24 +820,17 @@
     <footer id="footer">
         <ul>
             <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a
-                    href="https://www.facebook.com/marieweber.shoes/" class="text-dark" target="_blank">Facebook</a></li>
+                    href="https://www.facebook.com/marieweber.shoes/" class="text-dark" target="_blank">Facebook</a>
+            </li>
             <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a
-                    href="https://www.instagram.com/marieweber.shoes/" class="text-dark" target="_blank">Instagram</a></li>
+                    href="https://www.instagram.com/marieweber.shoes/" class="text-dark" target="_blank">Instagram</a>
+            </li>
             <li style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a
-                    href="https://fr.linkedin.com/company/marieweber" class="text-dark" target="_blank">LinkedIn</a></li>
+                    href="https://fr.linkedin.com/company/marieweber" class="text-dark" target="_blank">LinkedIn</a>
+            </li>
         </ul>
     </footer>
     <!--  -->
-
-
-
-
-
-
-
-
-
-
     <!-- jquery -->
     <script src="../js/jquery.min.js"></script>
     <!-- bootstrap -->
@@ -412,6 +839,202 @@
     <script src="../js/wow.js"></script>
     <!-- custom js -->
     <script src="../js/custom.js"></script>
+    <script src="javaScript">
+        (function () {
+            var Util,
+                __bind = function (fn, me) { return function () { return fn.apply(me, arguments); }; };
+
+            Util = (function () {
+                function Util() { }
+
+                Util.prototype.extend = function (custom, defaults) {
+                    var key, value;
+                    for (key in custom) {
+                        value = custom[key];
+                        if (value != null) {
+                            defaults[key] = value;
+                        }
+                    }
+                    return defaults;
+                };
+
+                Util.prototype.isMobile = function (agent) {
+                    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+                };
+
+                return Util;
+
+            })();
+
+            this.WOW = (function () {
+                WOW.prototype.defaults = {
+                    boxClass: 'wow',
+                    animateClass: 'animated',
+                    offset: 0,
+                    mobile: true
+                };
+
+                function WOW(options) {
+                    if (options == null) {
+                        options = {};
+                    }
+                    this.scrollCallback = __bind(this.scrollCallback, this);
+                    this.scrollHandler = __bind(this.scrollHandler, this);
+                    this.start = __bind(this.start, this);
+                    this.scrolled = true;
+                    this.config = this.util().extend(options, this.defaults);
+                }
+
+                WOW.prototype.init = function () {
+                    var _ref;
+                    this.element = window.document.documentElement;
+                    if ((_ref = document.readyState) === "interactive" || _ref === "complete") {
+                        return this.start();
+                    } else {
+                        return document.addEventListener('DOMContentLoaded', this.start);
+                    }
+                };
+
+                WOW.prototype.start = function () {
+                    var box, _i, _len, _ref;
+                    this.boxes = this.element.getElementsByClassName(this.config.boxClass);
+                    if (this.boxes.length) {
+                        if (this.disabled()) {
+                            return this.resetStyle();
+                        } else {
+                            _ref = this.boxes;
+                            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                                box = _ref[_i];
+                                this.applyStyle(box, true);
+                            }
+                            window.addEventListener('scroll', this.scrollHandler, false);
+                            window.addEventListener('resize', this.scrollHandler, false);
+                            return this.interval = setInterval(this.scrollCallback, 50);
+                        }
+                    }
+                };
+
+                WOW.prototype.stop = function () {
+                    window.removeEventListener('scroll', this.scrollHandler, false);
+                    window.removeEventListener('resize', this.scrollHandler, false);
+                    if (this.interval != null) {
+                        return clearInterval(this.interval);
+                    }
+                };
+
+                WOW.prototype.show = function (box) {
+                    this.applyStyle(box);
+                    return box.className = "" + box.className + " " + this.config.animateClass;
+                };
+
+                WOW.prototype.applyStyle = function (box, hidden) {
+                    var delay, duration, iteration;
+                    duration = box.getAttribute('data-wow-duration');
+                    delay = box.getAttribute('data-wow-delay');
+                    iteration = box.getAttribute('data-wow-iteration');
+                    return box.setAttribute('style', this.customStyle(hidden, duration, delay, iteration));
+                };
+
+                WOW.prototype.resetStyle = function () {
+                    var box, _i, _len, _ref, _results;
+                    _ref = this.boxes;
+                    _results = [];
+                    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                        box = _ref[_i];
+                        _results.push(box.setAttribute('style', 'visibility: visible;'));
+                    }
+                    return _results;
+                };
+
+                WOW.prototype.customStyle = function (hidden, duration, delay, iteration) {
+                    var style;
+                    style = hidden ? "visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;" : "visibility: visible;";
+                    if (duration) {
+                        style += "-webkit-animation-duration: " + duration + "; -moz-animation-duration: " + duration + "; animation-duration: " + duration + ";";
+                    }
+                    if (delay) {
+                        style += "-webkit-animation-delay: " + delay + "; -moz-animation-delay: " + delay + "; animation-delay: " + delay + ";";
+                    }
+                    if (iteration) {
+                        style += "-webkit-animation-iteration-count: " + iteration + "; -moz-animation-iteration-count: " + iteration + "; animation-iteration-count: " + iteration + ";";
+                    }
+                    return style;
+                };
+
+                WOW.prototype.scrollHandler = function () {
+                    return this.scrolled = true;
+                };
+
+                WOW.prototype.scrollCallback = function () {
+                    var box;
+                    if (this.scrolled) {
+                        this.scrolled = false;
+                        this.boxes = (function () {
+                            var _i, _len, _ref, _results;
+                            _ref = this.boxes;
+                            _results = [];
+                            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                                box = _ref[_i];
+                                if (!(box)) {
+                                    continue;
+                                }
+                                if (this.isVisible(box)) {
+                                    this.show(box);
+                                    continue;
+                                }
+                                _results.push(box);
+                            }
+                            return _results;
+                        }).call(this);
+                        if (!this.boxes.length) {
+                            return this.stop();
+                        }
+                    }
+                };
+
+                WOW.prototype.offsetTop = function (element) {
+                    var top;
+                    top = element.offsetTop;
+                    while (element = element.offsetParent) {
+                        top += element.offsetTop;
+                    }
+                    return top;
+                };
+
+                WOW.prototype.isVisible = function (box) {
+                    var bottom, offset, top, viewBottom, viewTop;
+                    offset = box.getAttribute('data-wow-offset') || this.config.offset;
+                    viewTop = window.pageYOffset;
+                    viewBottom = viewTop + this.element.clientHeight - offset;
+                    top = this.offsetTop(box);
+                    bottom = top + box.clientHeight;
+                    return top <= viewBottom && bottom >= viewTop;
+                };
+
+                WOW.prototype.util = function () {
+                    return this._util || (this._util = new Util());
+                };
+
+                WOW.prototype.disabled = function () {
+                    return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+                };
+
+                return WOW;
+
+            })();
+
+        }).call(this);
+
+
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100
+            }
+        );
+        wow.init();
+
+    </script>
 </body>
 
 </html>

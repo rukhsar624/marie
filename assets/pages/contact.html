@@ -15,7 +15,77 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
+<style>
+    /** fadeInLeft **/
 
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+.in-left {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-duration:2s;
+    animation-delay: 2s;
+}
+/*  */
+</style>
 <body style="background-color: #000;">
     <!-- loader  open -->
     <div id="loader" class="loader">
@@ -78,11 +148,35 @@
                         <span>SHOWROOM ATELIER</span>
                     </div>
                     <div class="mx-auto colonel">
-                        <div>
-                            <h1>12, rue du Colonel Driant</h1>
+                        <!-- <div>
+                            <h1 class="in-left">12, rue du Colonel Driant</h1>
+                        </div> -->
+                        <div class="d-flex justify-content-center in-left">
+                            <div><h1 class="">1</h1></div>
+                            <div><h1 class="">2</h1></div>
+                            <div><h1 class="ml-3 ">,</h1></div>
+                            <div><h1 class="">r</h1></div>
+                            <div><h1 class="">u</h1></div>
+                            <div><h1 class="">e</h1></div>
+                            <div><h1 class="ml-3 ">d</h1></div>
+                            <div><h1 class="">u</h1></div>
+                            <div><h1 class="ml-3 ">C</h1></div>
+                            <div><h1 class="">o</h1></div>
+                            <div><h1 class="">l</h1></div>
+                            <div><h1 class="">o</h1></div>
+                            <div><h1 class="">n</h1></div>
+                            <div><h1 class="">e</h1></div>
+                            <div><h1 class="">l</h1></div>
+                            <div><h1 class="ml-3 ">D</h1></div>
+                            <div><h1 class="">r</h1></div>
+                            <div><h1 class="">i</h1></div>
+                            <div><h1 class="">a</h1></div>
+                            <div><h1 class="">n</h1></div>
+                            <div><h1 class="">t</h1></div>
+
                         </div>
                         <div>
-                            <h1 class="wow animated slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">10000 Troyes, France</h1>
+                            <h1 class="in-left">10000 Troyes, France</h1>
                         </div>
                         <div class="mail wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                             <a href="">contact@marieweber.fr</a>
