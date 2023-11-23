@@ -9,10 +9,12 @@
     font-family: 'SchnyderMLight';
     src: url("../font/SchnyderMLight/SchnyderMLight.ttf");
 }
+
 @font-face {
     font-family: 'SchnyderXLLight';
     src: url("../font/SchnyderXLLight/SchnyderXLLight.ttf");
 }
+
 #main-content {
     position: relative;
 }
@@ -268,8 +270,8 @@
     margin-left: 6px;
 }
 
-.main-section .list-name .first-text h1{
-     font-family: 'SchnyderXLLight';
+.main-section .list-name .first-text h1 {
+    font-family: 'SchnyderXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 150px;
@@ -280,8 +282,9 @@
     cursor: pointer;
     z-index: 4;
 }
-.main-section .list-name .first-text1 h1{
-     font-family: 'SchnyderXLLight';
+
+.main-section .list-name .first-text1 h1 {
+    font-family: 'SchnyderXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 150px;
@@ -292,8 +295,9 @@
     cursor: pointer;
     z-index: 4;
 }
-.main-section .list-name .first-text2 h1{
-     font-family: 'SchnyderXLLight';
+
+.main-section .list-name .first-text2 h1 {
+    font-family: 'SchnyderXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 150px;
@@ -304,6 +308,7 @@
     cursor: pointer;
     z-index: 4;
 }
+
 .main-section .title-collection.title-2 svg {
     width: 107px;
     height: auto;
@@ -835,7 +840,7 @@
 .maison h1 {
     font-size: 80px;
     text-align: center;
-     font-family: 'SchnyderXLLight';
+    font-family: 'SchnyderXLLight';
 }
 
 .left-img-div {
@@ -961,7 +966,7 @@
 }
 
 /* image show in hover css open*/
-.hover-img-div{
+.hover-img-div {
     pointer-events: none;
     position: fixed;
     top: 0;
@@ -973,15 +978,19 @@
     display: none;
     transition: 0.5s ease;
 }
-.first-text:hover .hover-img-div{
-    display: block;  
+
+.first-text:hover .hover-img-div {
+    display: block;
 }
-.first-text:hover .first-text1 , .first-text:hover .first-text2{
+
+.first-text:hover .first-text1,
+.first-text:hover .first-text2 {
     opacity: 0.3;
     z-index: 4;
     color: #fff;
 }
-.first-div-hover{
+
+.first-div-hover {
     position: absolute;
     content: "";
     width: 296px;
@@ -989,12 +998,14 @@
     top: 0px;
     right: 399px;
 }
-.first-div-hover img{
+
+.first-div-hover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.second-div-hover{
+
+.second-div-hover {
     position: absolute;
     content: "";
     width: 500px;
@@ -1002,12 +1013,14 @@
     top: 200px;
     right: 85px;
 }
-.second-div-hover img{
+
+.second-div-hover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.Third-div-hover{
+
+.Third-div-hover {
     position: absolute;
     content: "";
     width: 200px;
@@ -1015,23 +1028,26 @@
     top: 245px;
     left: 508px;
 }
-.Third-div-hover img{
+
+.Third-div-hover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: 0;
 }
+
 /* image show in hover css closed*/
 /* Index page remaining css  */
 /* couleurs css */
-.text-rose{
+.text-rose {
     position: absolute;
     content: "";
     top: -370px;
     left: -15px;
     width: 70%;
 }
-.text-rose h1{
+
+.text-rose h1 {
     font-family: 'SchnyderWideXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1040,7 +1056,8 @@
     letter-spacing: 0;
     color: rgb(242, 196, 208);
 }
-.text-Bordeaux{
+
+.text-Bordeaux {
     position: absolute;
     content: "";
     top: -110px;
@@ -1048,7 +1065,8 @@
     width: 70%;
     z-index: -25;
 }
-.text-Bordeaux h1{
+
+.text-Bordeaux h1 {
     font-family: 'SchnyderWideXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1057,7 +1075,8 @@
     letter-spacing: 0;
     color: rgb(107, 38, 72);
 }
-.text-Vert{
+
+.text-Vert {
     position: absolute;
     content: "";
     top: -110px;
@@ -1065,7 +1084,8 @@
     width: 70%;
     z-index: -25;
 }
-.text-Vert h1{
+
+.text-Vert h1 {
     font-family: 'SchnyderWideXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1074,7 +1094,8 @@
     letter-spacing: 0;
     color: rgb(51, 94, 71);
 }
-.text-Orange{
+
+.text-Orange {
     position: absolute;
     content: "";
     top: -110px;
@@ -1082,7 +1103,8 @@
     width: 70%;
     z-index: -25;
 }
-.text-Orange h1{
+
+.text-Orange h1 {
     font-family: 'SchnyderWideXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1091,7 +1113,8 @@
     letter-spacing: 0;
     color: rgb(200, 113, 60);
 }
-.text-Marron{
+
+.text-Marron {
     position: absolute;
     content: "";
     top: -110px;
@@ -1099,7 +1122,8 @@
     width: 70%;
     z-index: -25;
 }
-.text-Marron h1{
+
+.text-Marron h1 {
     font-family: 'SchnyderWideXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1108,7 +1132,8 @@
     letter-spacing: 0;
     color: rgb(58, 45, 37);
 }
-.text-Panthere{
+
+.text-Panthere {
     position: absolute;
     content: "";
     top: -110px;
@@ -1116,7 +1141,8 @@
     width: 70%;
     z-index: -25;
 }
-.text-Panthere h1{
+
+.text-Panthere h1 {
     font-family: 'SchnyderWideXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1125,7 +1151,8 @@
     letter-spacing: 0;
     color: rgb(179, 147, 109);
 }
-.text-Noir{
+
+.text-Noir {
     position: absolute;
     content: "";
     top: -110px;
@@ -1133,7 +1160,8 @@
     width: 70%;
     z-index: -25;
 }
-.text-Noir h1{
+
+.text-Noir h1 {
     font-family: 'SchnyderWideXLLight';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1142,7 +1170,166 @@
     letter-spacing: 0;
     color: rgb(58, 45, 37);
 }
-.ml-3{
+
+.ml-3 {
     margin-left: 20px;
 }
+
+/*  */
+
+/* .main-div {
+    width: 90%;
+    height: 800px;
+    background-color: #404040;
+    position: relative;
+    background: url('../images/download.png');
+}
+.vertical-line{
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 115px;
+    background-color: #add9e6;
+    top: 50%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.horizontal-line{
+    position: absolute;
+    content: "";
+    width: 115px;
+    height: 16px;
+    background-color: #add9e6;
+    top: 48%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.circle {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #404040;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border: 2px solid #fff;
+
+}
+.circle-inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    border: 10px solid #add9e6;
+    position: absolute;
+    z-index: 3;
+    
+}
+.circle-img{
+    width: 100%;
+    height: 100%;
+}
+.circle-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.circle-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.first-div-img{
+    width: 100%;
+    height: 100%;
+}
+.first-div-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.first-curve-picture{
+    position: absolute;
+    content: "";
+    width: 101px;
+    height: 100px;
+    top: 40%;
+    left: 43%;
+    transform: translate(-30%, -30%);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.first-curve-picture img{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.second-curve-picture{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    right:39%;
+    transform: translate(-30%, -30%);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.second-curve-picture img{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.third-curve-picture{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    bottom: 33%;
+    left:43%;
+    transform: translate(-30%, -30%);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    z-index: 1;  
+}
+.third-curve-picture img{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.four-curve-picture{
+    position: absolute;
+    content: '';
+    width: 101px;
+    height: 100px;
+    bottom: 33%;
+    right: 39%;
+    transform: translate(-30%, -30%);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;   
+}
+.four-curve-picture img{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+} */
 /*  */

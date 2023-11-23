@@ -10,89 +10,104 @@
     <!-- font cdn -->
     <link href="https://db.onlinewebfonts.com/c/4d4f45d65a23eec6fb297a1bcf0c046f?family=SchnyderXLLight"
         rel="stylesheet">
-        <!-- wow css -->
-        <link rel="stylesheet" href="../css/wow.css">
+    <!-- wow css -->
+    <link rel="stylesheet" href="../css/wow.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@alphardex/aqua.css@1.5.5/dist/aqua.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 <style>
     /** fadeInLeft **/
 
-@-webkit-keyframes fadeInLeft {
-    from {
-        opacity:0;
-        -webkit-transform: translatex(-10px);
-        -moz-transform: translatex(-10px);
-        -o-transform: translatex(-10px);
-        transform: translatex(-10px);
+    @-webkit-keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translatex(-10px);
+            -moz-transform: translatex(-10px);
+            -o-transform: translatex(-10px);
+            transform: translatex(-10px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
     }
-    to {
-        opacity:1;
-        -webkit-transform: translatex(0);
-        -moz-transform: translatex(0);
-        -o-transform: translatex(0);
-        transform: translatex(0);
+
+    @-moz-keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translatex(-10px);
+            -moz-transform: translatex(-10px);
+            -o-transform: translatex(-10px);
+            transform: translatex(-10px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
     }
-}
-@-moz-keyframes fadeInLeft {
-    from {
-        opacity:0;
-        -webkit-transform: translatex(-10px);
-        -moz-transform: translatex(-10px);
-        -o-transform: translatex(-10px);
-        transform: translatex(-10px);
+
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translatex(-100px);
+            -moz-transform: translatex(-100px);
+            -o-transform: translatex(-100px);
+            transform: translatex(-100px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
     }
-    to {
-        opacity:1;
-        -webkit-transform: translatex(0);
-        -moz-transform: translatex(0);
-        -o-transform: translatex(0);
-        transform: translatex(0);
+
+    .in-left {
+        -webkit-animation-name: fadeInLeft;
+        -moz-animation-name: fadeInLeft;
+        -o-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-delay: 2s;
+        -moz-animation-delay: 2s;
+        -o-animation-duration: 2s;
+        animation-delay: 2s;
     }
-}
-@keyframes fadeInLeft {
-    from {
-        opacity:0;
-        -webkit-transform: translatex(-100px);
-        -moz-transform: translatex(-100px);
-        -o-transform: translatex(-100px);
-        transform: translatex(-100px);
+
+    /*  */
+    /* animation text css open  */
+    .camera {
+        perspective: 15vw;
     }
-    to {
-        opacity:1;
-        -webkit-transform: translatex(0);
-        -moz-transform: translatex(0);
-        -o-transform: translatex(0);
-        transform: translatex(0);
-    }
-}
-.in-left {
-    -webkit-animation-name: fadeInLeft;
-    -moz-animation-name: fadeInLeft;
-    -o-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -o-animation-duration:2s;
-    animation-delay: 2s;
-}
-/*  */
+
+    /* animation text css closed  */
 </style>
+
 <body style="background-color: #000;">
     <!-- loader  open -->
     <div id="loader" class="loader">
         <div class="image-div-main">
-        <img src="../images/loader.gif" alt="Loading..." class="loader-image">
+            <img src="../images/loader.gif" alt="Loading..." class="loader-image">
         </div>
-      </div>
+    </div>
     <!-- loader closed -->
     <!--Header open--->
     <header class="header" id="navbar-fixed-top">
@@ -151,39 +166,81 @@
                         <!-- <div>
                             <h1 class="in-left">12, rue du Colonel Driant</h1>
                         </div> -->
-                        <div class="d-flex justify-content-center in-left">
-                            <div><h1 class="">1</h1></div>
-                            <div><h1 class="">2</h1></div>
-                            <div><h1 class="ml-3 ">,</h1></div>
-                            <div><h1 class="">r</h1></div>
-                            <div><h1 class="">u</h1></div>
-                            <div><h1 class="">e</h1></div>
-                            <div><h1 class="ml-3 ">d</h1></div>
-                            <div><h1 class="">u</h1></div>
-                            <div><h1 class="ml-3 ">C</h1></div>
-                            <div><h1 class="">o</h1></div>
-                            <div><h1 class="">l</h1></div>
-                            <div><h1 class="">o</h1></div>
-                            <div><h1 class="">n</h1></div>
-                            <div><h1 class="">e</h1></div>
-                            <div><h1 class="">l</h1></div>
-                            <div><h1 class="ml-3 ">D</h1></div>
-                            <div><h1 class="">r</h1></div>
-                            <div><h1 class="">i</h1></div>
-                            <div><h1 class="">a</h1></div>
-                            <div><h1 class="">n</h1></div>
-                            <div><h1 class="">t</h1></div>
+                        <div class="d-flex justify-content-center staggered-flip-in text-4xl">
+                            <div>
+                                <h1 class="">1</h1>
+                            </div>
+                            <div>
+                                <h1 class="">2</h1>
+                            </div>
+                            <div>
+                                <h1 class="ml-3 ">,</h1>
+                            </div>
+                            <div>
+                                <h1 class="">r</h1>
+                            </div>
+                            <div>
+                                <h1 class="">u</h1>
+                            </div>
+                            <div>
+                                <h1 class="">e</h1>
+                            </div>
+                            <div>
+                                <h1 class="ml-3 ">d</h1>
+                            </div>
+                            <div>
+                                <h1 class="">u</h1>
+                            </div>
+                            <div>
+                                <h1 class="ml-3 ">C</h1>
+                            </div>
+                            <div>
+                                <h1 class="">o</h1>
+                            </div>
+                            <div>
+                                <h1 class="">l</h1>
+                            </div>
+                            <div>
+                                <h1 class="">o</h1>
+                            </div>
+                            <div>
+                                <h1 class="">n</h1>
+                            </div>
+                            <div>
+                                <h1 class="">e</h1>
+                            </div>
+                            <div>
+                                <h1 class="">l</h1>
+                            </div>
+                            <div>
+                                <h1 class="ml-3 ">D</h1>
+                            </div>
+                            <div>
+                                <h1 class="">r</h1>
+                            </div>
+                            <div>
+                                <h1 class="">i</h1>
+                            </div>
+                            <div>
+                                <h1 class="">a</h1>
+                            </div>
+                            <div>
+                                <h1 class="">n</h1>
+                            </div>
+                            <div>
+                                <h1 class="">t</h1>
+                            </div>
 
                         </div>
                         <div>
-                            <h1 class="in-left">10000 Troyes, France</h1>
+                            <h1 class="staggered-flip-in text-4xl">10000 Troyes, France</h1>
                         </div>
                         <div class="mail wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                             <a href="">contact@marieweber.fr</a>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-contact" >
+                <div class="contact-form-contact">
                     <form action="" class="mail wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
@@ -226,11 +283,14 @@
                             </div>
                         </div>
                     </form>
-                    <div class="row credits text-light wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="row credits text-light wow animated fadeInUp" data-wow-duration="1s"
+                        data-wow-delay="0.5s">
                         <div class="column-12" data-scroll="" data-scroll-type="up" data-scroll-hook="1"
-                            style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);text-decoration: none;">Crafted by <a
-                                href="http://www.monsieurcaillou.com" target="_blank" style="text-decoration: none;">Pierre Nguyen</a> &amp; <a
-                                href="https://www.deadwater.fr" target="_blank" style="text-decoration: none;">DEADWATER</a></div>
+                            style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);text-decoration: none;">
+                            Crafted by <a href="http://www.monsieurcaillou.com" target="_blank"
+                                style="text-decoration: none;">Pierre Nguyen</a> &amp; <a
+                                href="https://www.deadwater.fr" target="_blank"
+                                style="text-decoration: none;">DEADWATER</a></div>
                     </div>
                 </div>
             </div>
@@ -251,6 +311,7 @@
     <!--  -->
 
 
+
     <!-- jquery -->
     <script src="../js/jquery.min.js"></script>
     <!-- bootstrap -->
@@ -258,6 +319,8 @@
     <!-- wow js  -->
     <script src="../js/wow.js"></script>
     <!-- custom js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
     <script src="../js/custom.js"></script>
 </body>
 
