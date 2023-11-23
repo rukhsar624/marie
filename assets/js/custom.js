@@ -31,19 +31,19 @@ var animateHTML = function() {
    };
    animateHTML().init();
 //    loader js open
-  // function showLoader() {
-  //   document.getElementById('loader').style.display = 'flex';
-  // }
-  // function hideLoader() {
-  //   document.getElementById('loader').style.display = 'none';
-  // }
-  // window.addEventListener('beforeunload', showLoader);
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   showLoader();
-  //   setTimeout(function() {
-  //     hideLoader();
-  //   }, 2000);
-  // });
+  function showLoader() {
+    document.getElementById('loader').style.display = 'flex';
+  }
+  function hideLoader() {
+    document.getElementById('loader').style.display = 'none';
+  }
+  window.addEventListener('beforeunload', showLoader);
+  document.addEventListener('DOMContentLoaded', function() {
+    showLoader();
+    setTimeout(function() {
+      hideLoader();
+    }, 2000);
+  });
 // loader js closed
 // text animation
 const t1 = gsap.timeline();
