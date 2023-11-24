@@ -62,8 +62,8 @@ t1.set(staggeredFlipInChars, {
 
 t1.from(staggeredFlipInChars, {
     opacity: 1,
-    x: 0, // Final position
-    rotateY: -120, // Rotate in the opposite direction
+    x: -0, // Final position
+    rotateX: -120, // Rotate in the opposite direction
     duration: 1,
     stagger: 0.04,
     ease: "cubic-bezier(0.425, 0.005, 0.0, 1.0)"
@@ -148,13 +148,14 @@ window.addEventListener("load", function () {
     });
     tl.set(element, { autoAlpha: 1 });
     tl.from(lines, 1, {
-      yPercent: 100,
+      xPercent: 100, // Use xPercent instead of yPercent
       ease: Power3.out,
       stagger: 0.25,
       delay: 0.2
     });
   });
 });
+
 
 // code pen js closed
 
