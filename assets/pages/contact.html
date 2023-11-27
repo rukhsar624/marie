@@ -16,8 +16,12 @@
     <!-- text animation css  -->
     <link rel="stylesheet" href="https://use.typekit.net/skn8ash.css">
     <!--  -->
+    <!-- code pen css link -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+    <!--  -->
     <!-- custom css -->
     <link rel="stylesheet" href="../css/stylesheet.css">
+    <!--  -->
 </head>
 <style>
     /** fadeInLeft **/
@@ -104,63 +108,81 @@
     /* animation text css closed  */
     /* code pen css open*/
     h2 {
-  font-size: 3rem;
-  max-width: 500px;
-  font-family: termina, sans-serif;
-  text-transform: lowercase;
-  line-height: 1.4;
-  color: #FFF;
-  @media (max-width: 600px) {
-    font-size: 1.8rem;
-  }
-}
+        font-size: 3rem;
+        max-width: 500px;
+        font-family: termina, sans-serif;
+        text-transform: lowercase;
+        line-height: 1.4;
+        color: #FFF;
 
-.reveal-text {
-  visibility: hidden;
-}
+        @media (max-width: 600px) {
+            font-size: 1.8rem;
+        }
+    }
 
-.line {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-}
+    .reveal-text {
+        visibility: hidden;
+    }
 
-section {
-  background: #000;
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-  width: 100%;
-  padding: 10vw;
-}
+    .line {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+    }
 
-section:nth-child(2) {
-  background: #000;
-}
+    section {
+        background: #000;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        width: 100%;
+        padding: 10vw;
+    }
 
-section:nth-child(3) {
-  background: #000;
-}
+    section:nth-child(2) {
+        background: #000;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    section:nth-child(3) {
+        background: #000;
+    }
 
-.credit {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  font-family: Termina, sans-serif;
-  font-weight: 800;
-  font-size: 0.7rem;
+    * {
+        box-sizing: border-box;
+    }
 
-  a {
-    color: #1a292c;
-    text-transform: lowercase;
-  }
-}
+    .credit {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-family: Termina, sans-serif;
+        font-weight: 800;
+        font-size: 0.7rem;
+
+        a {
+            color: #1a292c;
+            text-transform: lowercase;
+        }
+    }
 
     /* code pen css closed */
+    /* css  */
+    * {
+        box-sizing: border-box;
+    }
+
+    .item {
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        padding-top: 75px;
+        background: rgba(255, 85, 0, .7);
+        text-align: center;
+        color: #4E4C48;
+        font-size: 1.5em;
+    }
+
+    /*  */
 </style>
 
 <body style="background-color: #000;">
@@ -214,7 +236,7 @@ section:nth-child(3) {
                 <div class="row image">
                     <div class="col-lg-4 mx-auto">
                         <div class="image-div">
-                            <div class="image1">
+                            <div class="image1" data-aos="zoom-in" data-aos-duration="1000">
                                 <img src="../images/dsc_4794_boutique.jpg" alt="">
                             </div>
                         </div>
@@ -302,21 +324,6 @@ section:nth-child(3) {
                         </div>
                     </div>
                 </div>
-                <!-- <section>
-                    <h2 class="reveal-text">
-                      Text reveal animation dynamically split by line.
-                    </h2>
-                  </section>
-                  <section>
-                    <h2 class="reveal-text">
-                      Text reveal animation dynamically split by line.
-                    </h2>
-                  </section>
-                  <section>
-                    <h2 class="reveal-text">
-                      Text reveal animation dynamically split by line.
-                    </h2>
-                  </section> -->
                 <div class="contact-form-contact">
                     <form action="" class="mail wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="row">
@@ -373,7 +380,51 @@ section:nth-child(3) {
             </div>
         </div>
     </section>
-    <!-- Contact-Main-Section-Closed -->
+    <!-- <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-center">fade-up</div>
+    <div class="item" data-aos="fade-down">fade-down</div>
+    <div class="item" data-aos="fade-right">fade-right</div>
+    <div class="item" data-aos="fade-left">fade-left</div>
+    <div class="item" data-aos="fade-up-right">fade-up-right</div>
+    <div class="item" data-aos="fade-up-left">fade-up-left</div>
+    <div class="item" data-aos="fade-down-right">fade-down-right</div>
+    <div class="item" data-aos="fade-down-left">fade-down-left</div>
+
+    <h1>FLIP</h1>
+    <div class="item" data-aos="flip-left">flip-left</div>
+    <div class="item" data-aos="flip-right">flip-right</div>
+    <div class="item" data-aos="flip-up">flip-up</div>
+    <div class="item" data-aos="flip-down">flip-down</div>
+
+    <h1>ZOOM</h1>
+    <div class="item" data-aos="zoom-in">zoom-in</div>
+    <div class="item" data-aos="zoom-in-up">zoom-in-up</div>
+    <div class="item" data-aos="zoom-in-down">zoom-in-down</div>
+    <div class="item" data-aos="zoom-in-left">zoom-in-left</div>
+    <div class="item" data-aos="zoom-in-right">zoom-in-right</div>
+    <div class="item" data-aos="zoom-out">zoom-out</div>
+    <div class="item" data-aos="zoom-out-up">zoom-out-up</div>
+    <div class="item" data-aos="zoom-out-down">zoom-out-down</div>
+    <div class="item" data-aos="zoom-out-right">zoom-out-right</div>
+    <div class="item" data-aos="zoom-out-left">zoom-out-left</div>
+
+    <h1>DIFFERENT SETTINGS EXAMPLES</h1>
+    <div class="item" data-aos="fade-up" data-aos-duration="3000">fade-up</div>
+    <div class="item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">fade-down linear</div>
+    <div class="item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">fade-right</div>
+    <div class="item" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+        data-aos-duration="500">fade-left</div>
+    <div class="item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+        fade-zoom-in</div>
+    <div class="item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">flip-left</div>
+
+    <h1>ANCHOR PLACEMENT</h1>
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-bottom">fade-up top-bottom</div>
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">fade-up center-bottom</div>
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">fade-up bottom-bottom</div>
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-center">fade-up top-center</div>
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="center-center">fade-up center-center</div>
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="bottom-center">fade-up bottom-center</div> -->
+
     <!-- footer -->
     <footer id="footer">
         <ul>
@@ -404,6 +455,14 @@ section:nth-child(3) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
     <!--  -->
     <script src="../js/custom.js"></script>
+    <!-- code pen js link  -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <!--  -->
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>

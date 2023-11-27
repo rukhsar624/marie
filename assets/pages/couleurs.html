@@ -13,230 +13,269 @@
     <!-- wow css -->
     <link rel="stylesheet" href="../css/wow.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@alphardex/aqua.css@1.5.5/dist/aqua.min.css">
+    <!-- code pen css link -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+    <!--  -->
     <!-- custom css -->
     <link rel="stylesheet" href="../css/stylesheet.css">
+    <!--  -->
 </head>
 <style>
     /** fadeInLeft **/
 
-@-webkit-keyframes fadeInLeft {
-    from {
-        opacity:0;
-        -webkit-transform: translatex(-10px);
-        -moz-transform: translatex(-10px);
-        -o-transform: translatex(-10px);
-        transform: translatex(-10px);
-    }
-    to {
-        opacity:1;
-        -webkit-transform: translatex(0);
-        -moz-transform: translatex(0);
-        -o-transform: translatex(0);
-        transform: translatex(0);
-    }
-}
-@-moz-keyframes fadeInLeft {
-    from {
-        opacity:0;
-        -webkit-transform: translatex(-10px);
-        -moz-transform: translatex(-10px);
-        -o-transform: translatex(-10px);
-        transform: translatex(-10px);
-    }
-    to {
-        opacity:1;
-        -webkit-transform: translatex(0);
-        -moz-transform: translatex(0);
-        -o-transform: translatex(0);
-        transform: translatex(0);
-    }
-}
-@keyframes fadeInLeft {
-    from {
-        opacity:0;
-        -webkit-transform: translatex(-100px);
-        -moz-transform: translatex(-100px);
-        -o-transform: translatex(-100px);
-        transform: translatex(-100px);
-    }
-    to {
-        opacity:1;
-        -webkit-transform: translatex(0);
-        -moz-transform: translatex(0);
-        -o-transform: translatex(0);
-        transform: translatex(0);
-    }
-}
-.in-left {
-    -webkit-animation-name: fadeInLeft;
-    -moz-animation-name: fadeInLeft;
-    -o-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -o-animation-duration:2s;
-    animation-delay: 2s;
-}
-/*  */
-/* in-up */
-@-webkit-keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(10px);
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
+    @-webkit-keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translatex(-10px);
+            -moz-transform: translatex(-10px);
+            -o-transform: translatex(-10px);
+            transform: translatex(-10px);
+        }
 
-@-moz-keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(10px);
-        transform: translateY(10px);
+        to {
+            opacity: 1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
     }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(100px);
-        transform: translateY(100px);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
+    @-moz-keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translatex(-10px);
+            -moz-transform: translatex(-10px);
+            -o-transform: translatex(-10px);
+            transform: translatex(-10px);
+        }
 
-.in-up {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-}
-/* in-down */
-@-webkit-keyframes fadeInDown {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
+        to {
+            opacity: 1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
     }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
 
-@-moz-keyframes fadeInDown {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translatex(-100px);
+            -moz-transform: translatex(-100px);
+            -o-transform: translatex(-100px);
+            transform: translatex(-100px);
+        }
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-100px);
-        transform: translateY(-100px);
+        to {
+            opacity: 1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
     }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
 
-.in-down {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-}
-/* bounce in */
-@-webkit-keyframes fadeInBounce {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
+    .in-left {
+        -webkit-animation-name: fadeInLeft;
+        -moz-animation-name: fadeInLeft;
+        -o-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-delay: 2s;
+        -moz-animation-delay: 2s;
+        -o-animation-duration: 2s;
+        animation-delay: 2s;
     }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
 
-@-moz-keyframes fadeInBounce {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
+    /*  */
+    /* in-up */
+    @-webkit-keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+        }
 
-@keyframes fadeInBounce {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(-100px);
-        transform: translateY(-100px);
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
     }
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+
+    @-moz-keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
     }
-}
 
-.in-bounce {
-    -webkit-animation-name: fadeInBounce;
-    animation-name: fadeInBounce;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-}
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+        }
 
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    .in-up {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+    }
+
+    /* in-down */
+    @-webkit-keyframes fadeInDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    @-moz-keyframes fadeInDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    .in-down {
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+    }
+
+    /* bounce in */
+    /* @-webkit-keyframes fadeInBounce {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    @-moz-keyframes fadeInBounce {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInBounce {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    .in-bounce {
+        -webkit-animation-name: fadeInBounce;
+        animation-name: fadeInBounce;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+    } */
+
+    /* css  */
+    * {
+        box-sizing: border-box;
+    }
+
+    .item {
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        padding-top: 75px;
+        background: rgba(255, 85, 0, .7);
+        text-align: center;
+        color: #4E4C48;
+        font-size: 1.5em;
+    }
+
+    /*  */
 </style>
 <body>
     <!-- loader  open -->
@@ -284,85 +323,6 @@
     <!-- main section open -->
     <section class="main position-relative">
         <div class="rose">
-            <div class="color-list">
-                <!-- <div class="row">
-                    <div class="column-12 abs name-color"
-                        style="color: rgb(242, 196, 208); visibility: hidden; opacity: 0;">
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter42">R</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter43">o</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter44">s</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter45">e</div>
-                    </div>
-                    <div class="column-12 abs name-color"
-                        style="color: rgb(107, 38, 72); visibility: inherit; opacity: 1;">
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter34">B</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter35">o</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter36">r</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter37">d</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter38">e</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter39">a</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter40">u</div>
-                        <div style="position: relative; display: inline-block; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"
-                            class="letter letter41">x</div>
-                    </div>
-                    <div class="column-12 abs name-color" style="color: #335e47">
-                        <div style="position:relative;display:inline-block;" class="letter letter30">V</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter31">e</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter32">r</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter33">t</div>
-                    </div>
-                    <div class="column-12 abs name-color" style="color: #c8713c">
-                        <div style="position:relative;display:inline-block;" class="letter letter24">O</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter25">r</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter26">a</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter27">n</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter28">g</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter29">e</div>
-                    </div>
-                    <div class="column-12 abs name-color" style="color: #3a2d25">
-                        <div style="position:relative;display:inline-block;" class="letter letter18">M</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter19">a</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter20">r</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter21">r</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter22">o</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter23">n</div>
-                    </div>
-                    <div class="column-12 abs name-color" style="color: #b3936d">
-                        <div style="position:relative;display:inline-block;" class="letter letter10">P</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter11">a</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter12">n</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter13">t</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter14">h</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter15">è</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter16">r</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter17">e</div>
-                    </div>
-                    <div class="column-12 abs name-color" style="color: #f4f4f4">
-                        <div style="position:relative;display:inline-block;" class="letter letter5">B</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter6">l</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter7">a</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter8">n</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter9">c</div>
-                    </div>
-                    <div class="column-12 abs name-color" style="color: #000000">
-                        <div style="position:relative;display:inline-block;" class="letter letter1">N</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter2">o</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter3">i</div>
-                        <div style="position:relative;display:inline-block;" class="letter letter4">r</div>
-                    </div>
-                </div> -->
-            </div>
             <div class="row text-title">
                 <div class="row">
                     <div class="col-lg-6 mx-auto">
@@ -384,8 +344,6 @@
         <div class="container">
             <div class="row position-relative">
                 <div class="text-rose">
-                    <!-- <h1 class="staggered-flip-in text-4xl">
-                        Rose</h1> -->
                     <div class="d-flex">
                         <div>
                             <h1 class="in-left">
@@ -408,13 +366,13 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Charlotte</h1>
             <div class="row pictures">
-                <div class="first-image-couleurs in-bounce">
+                <div class="first-image-couleurs" data-aos="zoom-in" data-aos-duration="2000">
                     <img src="../images/charlotte_rose1.jpg" alt="">
                 </div>
-                <div class="second-image-couleures in-bounce">
+                <div class="second-image-couleures" data-aos="zoom-in" data-aos-duration="1000">
                     <img src="../images/charlotte_rose2.jpg" alt="">
                 </div>
-                <div class="third-image-couleures in-bounce">
+                <div class="third-image-couleures" data-aos="zoom-in" data-aos-duration="1500"> 
                     <img src="../images/charlotte_rose3.jpg" alt="">
                 </div>
             </div>
@@ -433,13 +391,13 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Raphaële</h1>
             <div class="row pictures-2">
-                <div class="first-img-raps wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-raps" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="../images/raphaelebordeaux2.jpg" alt="">
                 </div>
-                <div class="second-img-raps wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-raps" data-aos="zoom-in" data-aos-duration="2000">
                     <img src="../images/raphaelebordeaux3.jpg" alt="">
                 </div>
-                <div class="third-img-raps wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="third-img-raps" data-aos="zoom-in" data-aos-duration="1000">
                     <img src="../images/raphaelebordeaux1.jpg" alt="">
                 </div>
             </div>
@@ -453,16 +411,16 @@
                 <div class="text-Bordeaux">
                     <h1 class="wow fadeInLeft" data-wow-delay="0.1s"
                         style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
-                        
+
                     </h1>
                 </div>
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Amélie</h1>
             <div class="row pictures-3">
-                <div class="first-img-ame wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-ame" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="../images/amelie_bordeaux1.jpg" alt="">
                 </div>
-                <div class="second-img-ame wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-ame" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/amelie_bordeaux2.jpg" alt="">
                 </div>
             </div>
@@ -481,10 +439,10 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Raphaële</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="../images/weber_raphaecc88levert2.jpg" alt="" >
+                <div class="first-img-rap" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <img src="../images/weber_raphaecc88levert2.jpg" alt="">
                 </div>
-                <div class="second-img-rap wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-rap" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="../images/weber_raphaecc88levert3.jpg" alt="">
                 </div>
             </div>
@@ -503,10 +461,10 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Hannah</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-rap" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/minibertrand_vert1.jpg" alt="">
                 </div>
-                <div class="second-img-rap wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-rap" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="../images/minibertrand_vert2.jpg" alt="">
                 </div>
             </div>
@@ -525,13 +483,13 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Charlotte</h1>
             <div class="row pictures">
-                <div class="first-image-couleurs wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-image-couleurs" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/charlotte_vert1.jpg" alt="">
                 </div>
-                <div class="second-image-couleures wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-image-couleures" data-aos="zoom-in-up" data-aos-duration="2000">
                     <img src="../images/charlotte_vert2.jpg" alt="">
                 </div>
-                <div class="third-image-couleures wow animated fadeIntop" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="third-image-couleures" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/charlotte_vert3.jpg" alt="">
                 </div>
             </div>
@@ -550,10 +508,10 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Hannah</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-rap" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/minibertrand_orange2.jpg" alt="">
                 </div>
-                <div class="second-img-rap wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-rap" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="../images/minibertrand_orange3.jpg" alt="">
                 </div>
             </div>
@@ -572,10 +530,10 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Hannah</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-rap" data-aos="zoom-in-up" data-aos-duration="2000">
                     <img src="../images/bertrand_orange2.jpg" alt="">
                 </div>
-                <div class="second-img-rap wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-rap" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/minibertrand_marron2.jpg" alt="">
                 </div>
             </div>
@@ -594,13 +552,13 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Bertrand</h1>
             <div class="row pictures">
-                <div class="first-image-couleurs wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-image-couleurs" data-aos="zoom-in-up" data-aos-duration="3000">
                     <img src="../images/bertrand_orange.jpg" alt="">
                 </div>
-                <div class="second-image-couleures wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-image-couleures" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/bertrand_orange1.jpg" alt="">
                 </div>
-                <div class="third-image-couleures wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="third-image-couleures" data-aos="zoom-in-up" data-aos-duration="3000">
                     <img src="../images/bertrand_orange2.jpg" alt="">
                 </div>
             </div>
@@ -619,13 +577,13 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Amélie</h1>
             <div class="row pictures">
-                <div class="first-image-couleurs wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-image-couleurs" ddata-aos="zoom-in-up" data-aos-duration="3000">
                     <img src="../images/amelie_leopard1.jpg" alt="">
                 </div>
-                <div class="second-image-couleures wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-image-couleures" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/amelie_leopard2.jpg" alt="">
                 </div>
-                <div class="third-image-couleures wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="third-image-couleures" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/amelie_leopard3.jpg" alt="">
                 </div>
             </div>
@@ -644,10 +602,10 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Amélie</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-rap" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="../images/amelie_blanc1.jpg" alt="">
                 </div>
-                <div class="second-img-rap wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-rap" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/amelie_blanc2.jpg" alt="">
                 </div>
             </div>
@@ -666,10 +624,10 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Raphaële</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-rap" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/weber_raphaecc88lenoir2.jpg" alt="">
-                </div> 
-                <div class="second-img-rap wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                </div>
+                <div class="second-img-rap" data-aos="zoom-in-up" data-aos-duration="2000">
                     <img src="../images/weber_raphaecc88lenoir4.jpg" alt="">
                 </div>
             </div>
@@ -688,10 +646,10 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Hannah</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-rap" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/minibertrand_bleu2.jpg" alt="">
                 </div>
-                <div class="second-img-rap wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-rap" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="../images/minibertrand_bleu4.jpg" alt="">
                 </div>
             </div>
@@ -710,13 +668,13 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Charlotte</h1>
             <div class="row pictures">
-                <div class="first-image-couleurs wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-image-couleurs"data-aos="zoom-in-up" data-aos-duration="2000">
                     <img src="../images/charlotte_noir1.jpg" alt="">
                 </div>
-                <div class="second-image-couleures wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-image-couleures" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/charlotte_noir2.jpg" alt="">
                 </div>
-                <div class="third-image-couleures wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="third-image-couleures" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/charlotte_noir3.jpg" alt="">
                 </div>
             </div>
@@ -735,10 +693,10 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Amélie</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-rap" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/amelie_noir1.jpg" alt="">
                 </div>
-                <div class="second-img-rap wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-rap" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="../images/amelie_noir3.jpg" alt="">
                 </div>
             </div>
@@ -757,13 +715,13 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Pascal</h1>
             <div class="row pictures-un">
-                <div class="first-img-pas wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-pas" data-aos="zoom-in-up" data-aos-duration="3000">
                     <img src="../images/marieweber__pascal_noir3.jpg" alt="">
                 </div>
-                <div class="second-img-pas wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-pas" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/marieweber__pascal_noir2.jpg" alt="">
                 </div>
-                <div class="third-img-pas wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="third-img-pas" data-aos="zoom-in-up" data-aos-duration="2000">
                     <img src="../images/marieweber__pascal_noir1.jpg" alt="">
                 </div>
             </div>
@@ -782,10 +740,10 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Bertrand</h1>
             <div class="row pictures-4">
-                <div class="first-img-rap wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-img-rap" data-aos="zoom-in-up" data-aos-duration="2000">
                     <img src="../images/marieweber__bertrand_noir1.jpg" alt="">
                 </div>
-                <div class="second-img-rap wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-img-rap" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/bertrand_bleu.jpg" alt="">
                 </div>
             </div>
@@ -804,13 +762,13 @@
             </div>
             <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Charlotte</h1>
             <div class="row pictures">
-                <div class="first-image-couleurs wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="first-image-couleurs" data-aos="zoom-in-up" data-aos-duration="3000">
                     <img src="../images/bertrand_noir1.jpg" alt="">
                 </div>
-                <div class="second-image-couleures wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="second-image-couleures" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/bertrand_noir.jpg" alt="">
                 </div>
-                <div class="third-image-couleures wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="third-image-couleures" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="../images/bertrand_noir3.jpg" alt="">
                 </div>
             </div>
@@ -841,8 +799,14 @@
     <!-- custom js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+    <!-- code pen js link  -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <!--  -->
     <script src="../js/custom.js"></script>
-    <script src="javaScript">
+    <script>
+        AOS.init({
+            duration: 1000
+        });
         (function () {
             var Util,
                 __bind = function (fn, me) { return function () { return fn.apply(me, arguments); }; };
@@ -1039,5 +1003,4 @@
 
     </script>
 </body>
-
 </html>
