@@ -981,6 +981,7 @@
 
 .first-text:hover .hover-img-div {
     display: block;
+    transition: all 1s cubic-bezier(.23,1,.32,11);
 }
 
 .first-text:hover .first-text1,
